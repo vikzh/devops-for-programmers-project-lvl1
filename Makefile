@@ -3,3 +3,6 @@ server:
 
 test:
 	npm -s test
+
+install:
+	npm install
