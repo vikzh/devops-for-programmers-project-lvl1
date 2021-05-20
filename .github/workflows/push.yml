@@ -20,6 +20,7 @@ jobs:
       - name: test
         run: make test	     
   docker:
+    needs: verify
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
