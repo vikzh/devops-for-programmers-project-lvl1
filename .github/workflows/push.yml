@@ -39,4 +39,4 @@ jobs:
           context: .
           file: ./Dockerfile.production
           push: true
-          tags: viktorzhukovsky/devops-for-programmers-project-lvl1
+          tags: viktorzhukovsky/devops-for-programmers-project-lvl1:latest
