@@ -10,6 +10,7 @@ services:
     command: ["nodos", "server", "-h", "0.0.0.0"]
 
   caddy:
+    container_name: devops_project1_caddy
     image: caddy:alpine
     volumes:
       - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile

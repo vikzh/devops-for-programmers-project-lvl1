@@ -1,5 +1,6 @@
 services:
   app:
+    container_name: devops_project1_app
     build:
       context: .
       dockerfile: Dockerfile.production
@@ -8,6 +9,7 @@ services:
       - db
 
   db:
+    container_name: devops_project1_postgres
     image: postgres:11
     environment:
       POSTGRES_USER: ${NODOS_DB_USERNAME}
